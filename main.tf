@@ -25,9 +25,3 @@ resource "google_firebase_web_app" "default" {
   deletion_policy = "DELETE"
 }
 
-data "google_firebase_web_app_config" "default" {
-  provider     = google-beta
-  project      = var.project_id
-  web_app_id   = var.app_id
-}
-

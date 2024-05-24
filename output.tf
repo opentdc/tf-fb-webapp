@@ -13,6 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+data "google_firebase_web_app_config" "default" {
+  provider     = google-beta
+  project      = var.project_id
+  web_app_id   = var.app_id
+}
+
 output "web_app_config" {
   value = {
     projectId         = var.project_id
