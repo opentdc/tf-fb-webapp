@@ -38,5 +38,4 @@ variable "project_id" {
 variable "app_name" {
   description = "The display name of the firebase app, It is only used within Firebase interfaces and not visible to end-users."
   type        = string
-  default     = var.app_id + "-" + var.env + "-" + var.platform
 }
